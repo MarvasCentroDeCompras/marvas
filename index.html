@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarvasCentroDeCompras</title>
+    <link rel = "stylesheet" href = "style2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@5.0.0/dist/css/ionicons.min.css">
+
+    
+</head>
+<body>
+    <header>
+        <div class="header-top">
+                <p>
+                  <b>Envio Gratuito</b>
+                  Orden Mayor a S/.150.00
+                </p>
+        </div>
+
+        <div class="header-main">
+            <div class="logo">
+                <a href="#" class="header-logo">
+                    <img src="LOGOM.png" alt="Anon's logo" width="120" height="50">
+                  </a>
+            </div>
+
+            <div class="search-container" id="searchContainer">
+                 <input type="text" id="searchInput" placeholder="Buscar el producto...">
+            </div>
+            <div id="searchResults"></div>
+            
+        </div>
+        <div class="ribbon">
+            <span class="ribbon-text" id="bebe">PARA TU BEBE</span>
+            <span class="ribbon-text" id="hogar">PARA TU HOGAR</span>
+            <span class="ribbon-text" id="mascota">PARA TU MASCOTA</span>
+        </div>
+
+        <div id="slideshow">
+            <img src="images/portada1.png" alt="Portada" class="slide">
+        </div>
+        
+    </header>
+
+    <div class = "wrapper">
+        <div class = "category-filter">
+            <div id="productsContainer" class="filter-items">
+                <div class = "container">
+                    <div class = "filter-btns3" id="filterBtns3">
+                        <button type = "button" class = "filter-btn3" id = "all3">TODOS</button>
+                        <button type = "button" class = "filter-btn3" id = "forrado">GIMNASIO FORRADOS</button>
+                        <button type = "button" class = "filter-btn3" id = "pino">GIMNASIO DE PINO</button>
+                        <button type = "button" class = "filter-btn3" id = "accesorio">ACCESORIOS</button>
+                    </div> 
+                    <div class = "filter-btns2" id="filterBtns2">
+                            <button type = "button" class = "filter-btn2" id = "all2">TODOS</button>
+                    </div>
+                    <div class = "filter-btns">
+                    <button type = "button" class = "filter-btn" id = "all">TODOS</button>
+                    <button type = "button" class = "filter-btn" id = "SET">SET DE ALIMENTACION</button>
+                    <button type = "button" class = "filter-btn" id = "chupon">CHUPONES</button>
+                    <button type = "button" class = "filter-btn" id = "mordedor">MORDEDORES</button>
+                    <button type = "button" class = "filter-btn" id = "accesorios">ACCESORIOS</button>
+                    <button type = "button" class = "filter-btn" id = "juguetes">JUGUETES MONTESSORI</button>
+                    <button type = "button" class = "filter-btn" id = "variados">VARIADOS</button>
+                    <button type = "button" class = "filter-btn" id = "ropa">ROPA</button>
+                    </div>
+
+                    <div class = "filter-items">
+                    <!--<div class = "filter-item all SET">
+                        <a href="clasico con tapa.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/CON-TAPA.jpg" alt = "Item image">
+                            <span class="agotado">Agotado</span>
+                        </div>
+                        <div class = "hover-container2">
+                            <div><img src = "images/CLASICO CON TAPA/c1.jpg"></div>
+                            <div><img src = "images/CLASICO CON TAPA/c2.jpg"></div>
+                            <div><img src = "images/CLASICO CON TAPA/c3.jpg"></div>
+                            <div><img src = "images/CLASICO CON TAPA/c4.jpg"></div>
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: black;">SET DE ALIMENTACION CLASICO CON TAPA</p>
+                            <div>
+                                
+                                <span class = "new-price">S/.85.00</span>
+                            </div>
+                            
+                        </div>
+                        </a>
+                    </div>-->
+
+                    
+                    <div class = "filter-item all SET">
+                        <a href="CLASICO6P.HTML" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/6PIEZAS.jpg" alt = "Item image">   
+                        </div>
+                        <div class = "hover-container2">
+                            <div><img src = "images/CLASICO 6PIEZAS/circular 6 rosado.jpg"></div>
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: black;">SET DE ALIMENTACION CLASICO 6 PIEZAS</p>
+                            <div>
+                                <span class = "new-price">S/.75.00</span>
+                                <span class = "codigo">Codigo K5.2</span>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class = "filter-item all SET">
+                        <a href="ARDILLA.HTML" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/ARDILLA ROSADO.jpg" alt = "Item image">
+                            
+                        </div>
+                        <div class = "hover-container2">
+                            <div><img src = "images/ARDILLA/ardilla celeste.jpg"></div>
+                            <div><img src = "images/ARDILLA/ARDILLA MORADO.jpg"></div>
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: black;">SET DE ALIMENTACION DE ARDILLA</p>
+                            <div>
+                                
+                                <span class = "new-price">S/.85.00</span>
+                                <span class = "codigo">Codigo K6.5</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Add to Cart</a>-->
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class = "filter-item all SET">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/CARACOL.png" alt = "Item image">
+                        </div>
+                        
+                        <div class = "item-info">
+                            
+                            <p style="color: black;">SET DE ALIMENTACION DE CARACOL</p>
+                            <div class="color-options">
+                                <div class="color-text">COLORES DISPONIBLES:</div>
+                                <div class="color-option" style="background-color: rgb(243, 176, 188);"></div>
+                            </div>
+                            <div>
+                                <span class = "new-price">S/.85.00</span>
+                                <span class = "codigo">Codigo STK.</span>
+                            </div>
+                        
+                        </div>
+                    </div>
+
+                    <div class = "filter-item all SET">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/cangrejo fuccia.png" alt = "Item image">
+                        </div>
+                        
+                        <div class = "item-info">
+                            
+                            <p style="color: black;">SET DE ALIMENTACION DE CANGREJO</p>
+                            <div class="color-options">
+                                <div class="color-text">COLORES DISPONIBLES:</div>
+                                <div class="color-option" style="background-color: rgb(243, 176, 188);"></div>
+                            </div>
+                            <div>
+                                
+                                <span class = "new-price">S/.85.00</span>
+                                <span class = "codigo">Codigo STK.</span>
+                            </div>
+                        
+                        </div>
+                    </div>
+
+                    <!--<div class = "filter-item all SET">
+                        <a href="cangrejo.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            
+                            <img src = "images/PORTADA/cr1.jpg" alt = "Item image">
+
+                        </div>
+                        <div class = "item-info">
+                            <div class="color-options">
+                                <div class="color-text">COLORES DISPONIBLES:</div>
+                                <div class="color-option" style="background-color: #204868;"></div>
+                                <div class="color-option" style="background-color: rgb(148, 210, 230);"></div>
+                                <div class="color-option" style="background-color: rgb(201, 119, 132);"></div>
+                                <div class="color-option" style="background-color: rgb(243, 207, 213);"></div>
+                            </div>
+                            <p style="color: black;">SET ALIMENTACION DE CANGREJO</p>
+                            <div>
+                                
+                                <span class = "new-price">S/.85.00</span>
+                            </div>
+                            
+                        </div>
+                    </a>
+                    </div>-->
+
+                    <div class = "filter-item all SET">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/CANGREJO 6 PIEZAS.jpg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: black;">SET ALIMENTACION CANGREJO 6 PIEZAS</p>
+                            <div class="color-options">
+                                <div class="color-text">COLORES DISPONIBLES:</div>
+                                <div class="color-option" style="background-color: rgb(64, 96, 133);"></div>
+                            </div>
+                            <div>
+                                
+                                <span class = "new-price">S/.75.00</span>
+                                <span class = "codigo">Codigo STK.</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Add to Cart</a>-->
+                        </div>
+                    </div>
+
+                    <!--<div class = "filter-item all SET">
+                        <a href="conejo.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/CONEJO.jpg" alt = "Item image">
+                            <span class="agotado">Agotado</span>
+                        </div>
+                        <div class = "hover-container2">
+                            <div><img src = "images/CONEJO/r1.jpg"></div>
+                            <div><img src = "images/CONEJO/r2.jpg"></div>
+                            <div><img src = "images/CONEJO/r3.jpg"></div>
+                            <div><img src = "images/CONEJO/r4.jpg"></div>
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: black;">SET ALIMENTACION CONEJO</p>
+                            <div>
+                                
+                                <span class = "new-price">S/.85.00</span>
+                                <span class = "codigo">Codigo STK.</span>
+                            </div>
+                            <a href = "#" class ="add-btn">Add to Cart</a>
+                            
+                        </div>
+                    </a>
+                    </div>-->
+
+                    <!--<div class = "filter-item all SET">
+                        <a href="elefante1.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/ELEFANTE1.jpg" alt = "Item image">
+                            <span class="agotado">Agotado</span>
+                        </div>
+                        <div class = "item-info">
+                            <div class="color-options">
+                                <div class="color-text">COLORES DISPONIBLES:</div>
+                                <div class="color-option" style="background-color: #204868;"></div>
+                                <div class="color-option" style="background-color: rgb(148, 210, 230);"></div>
+                                <div class="color-option" style="background-color: rgb(201, 119, 132);"></div>
+                                <div class="color-option" style="background-color: rgb(243, 207, 213);"></div>
+                            </div>
+
+                            <p style="color: black;">SET ALIMENTACION ELEFANTE T1</p>
+                            
+                            <div>
+                                
+                                <span class = "new-price">S/.85.00</span>
+                            </div>
+                            
+                        </div>
+                    </a>
+                    </div>-->
+
+                    <div class = "filter-item all SET">
+                        
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/ELEFANTE2.png" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            
+                            <p style="color:black">SET ALIMENTACION ELEFANTE T2</p>
+                            <div class="color-options">
+                                <div class="color-text">COLORES DISPONIBLES:</div>
+                                <div class="color-option" style="background-color: rgb(201, 119, 132);"></div>
+                            </div>
+                            <div>
+                                
+                                <span class = "new-price">S/.85.00</span>
+                                <span class = "codigo">Codigo STK.K6.5</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Add to Cart</a>-->
+                        </div>
+                    
+                    </div>
+                    <div class = "filter-item all SET">
+                        <a href="BABERO-DISEÑO.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/BABERO-DISEÑO MELON.jpg" alt = "Item image">
+                        </div>
+                        <div class = "hover-container2">
+                            
+                            <div><img src = "images/SET DISEÑO BABERO/BABERO-CELESTE.jpg"></div>
+                            <div><img src = "images/SET DISEÑO BABERO//BABERO-ROSA2.jpg"></div>
+                        </div>
+                        <div class = "item-info">
+                            
+                            <p style="color:black">SET ALIMENTACION CON DISEÑO 4 PIEZAS</p>
+                            <div>
+                                
+                                <span class = "new-price">S/.65.00</span>
+                                <span class = "codigo">Codigo STK.K4</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Add to Cart</a>-->
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class = "filter-item all chupon">
+                        <a href="Chupon-alimentador-sonajera.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/ALIMENTADOR SONAJERA.jpg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: black;">CHUPON ALIMENTADOR SONAJERA </p>
+                            <div class="color-options">
+                                <div class="color-text">COLORES DISPONIBLES:</div>
+                                <div class="color-option" style="background-color: rgb(65, 215, 253);"></div>
+                                <div class="color-option" style="background-color: rgb(201, 119, 132);"></div>
+                                <div class="color-option" style="background-color: purple;"></div>
+                                <div class="color-option" style="background-color: orangered;"></div>
+                            </div>
+                            <div>
+                                
+                                <span class = "new-price">S/.13.00</span>
+                                <span class = "codigo">Codigo A6.5K7</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Add to Cart</a>-->
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class = "filter-item all chupon">
+                        <a href="Chupon-alimentador-OSITO.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/chupon de osito.png" alt = "Item image">
+                            
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: black;">CHUPON ALIMENTADOR DE OSITO</p>
+                            <div class="color-options">
+                                <div class="color-text">COLORES DISPONIBLES:</div>
+                                
+                                <div class="color-option" style="background-color: rgb(65, 215, 253);"></div>
+                                <div class="color-option" style="background-color: rgb(201, 119, 132);"></div>
+                            </div>
+                            <div>
+                                
+                                <span class = "new-price">S/.20.00</span>
+                                <span class = "codigo">Codigo K12</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Add to Cart</a>-->
+                        </div>
+                    </a>
+                    </div>
+                    <div class = "filter-item all mordedor">
+                        <a href="mordedor de control remoto.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/MORDEDOR CONTROL REMOTO/9.jpg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            
+                            <p style="color: black;">MORDEDOR DE CONTROL REMOTO</p>
+                            <div class="color-options">
+                                <div class="color-text">COLORES DISPONIBLES:</div>
+                                
+                                <div class="color-option" style="background-color: black;"></div>
+                                <div class="color-option" style="background-color: rgb(201, 119, 132);"></div>
+                                
+                            </div>
+                            <div>
+                                
+                                <span class = "new-price">S/.19.00</span>
+                                <span class = "codigo">Codigo K13</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Add to Cart</a>-->
+                        </div>
+                    </a>
+                    </div>
+                    <div class = "filter-item all mordedor">
+                        <a href="PLATANO.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/MORDEDOR PLATANO/1.jpg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            
+                            <p style="color: black;">PLATANITO MORDEDOR</p>
+                            <div class="color-options">
+                                <div class="color-text">COLORE DISPONIBLE:</div>
+                                <div class="color-option" style="background-color: yellow;"></div> 
+                            </div>
+                            <div>
+                                
+                                <span class = "new-price">S/.18.00</span>
+                                <span class = "codigo">Codigo K8</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class = "filter-item all mordedor">
+                        <a href="jirafa.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            
+                            <img src = "images/MORDEDOR JIRAFA/1.webp" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            
+                            <p style="color: black;">MORDEDOR DE JIRAFA </p>
+                            <div class="color-options">
+                                <div class="color-text">COLORES DISPONIBLES:</div>
+                                <div class="color-option" style="background-color: yellow;"></div>
+                                <div class="color-option" style="background-color: rgb(201, 119, 132);"></div>
+                                <div class="color-option" style="background-color: green;"></div>
+                            </div>
+                            <div>
+                                
+                                <span class = "new-price">S/.18.00</span>
+                                <span class = "codigo">Codigo MK.A12</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                    </div>
+                    
+
+                    <div class = "filter-item all accesorios">
+                        <a href="limpia cañita.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/LIMPIA CAÑITA.jpg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            
+                            <p style="color: black;">LIMPIA CAÑITA</p>
+                            <div class="color-options">
+                                <div class="color-text">COLORES DISPONIBLES:</div>
+                                <div class="color-option" style="background-color: rgb(241, 241, 52);"></div>
+                                <div class="color-option" style="background-color: rgb(90, 202, 240);"></div>
+                                <div class="color-option" style="background-color: rgb(253, 136, 156);"></div>
+                            </div>
+                            <div>
+                                
+                                <span class = "new-price">S/.3.00</span>
+                                <span class = "codigo">Codigo K1</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class = "filter-item all accesorios">
+                        <a href="DEDAL.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/DEDAL.webp" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            
+                            <p style="color: black;">DEDAL</p>
+                            <div class="color-options">
+                                <div class="color-text">COLORES DISPONIBLES:</div>
+                                <div class="color-option" style="background-color: white;"></div>
+                                <div class="color-option" style="background-color: rgb(253, 136, 156);"></div>
+                                <div class="color-option" style="background-color: rgb(85, 160, 185);"></div>
+                            </div>
+                            <div>
+                                
+                                <span class = "new-price">S/.9.00</span>
+                                <span class = "codigo">Codigo K5</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                    </div>
+                    <div class = "filter-item all accesorios">
+                        <a href="aplasta papilla.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/APLASTA.PAPILLA.webp" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            
+                            <p style="color: black;">APLASTA PAPILLA</p>
+                            <div class="color-options">
+                                <div class="color-text">COLORES DISPONIBLES:</div>
+                                <div class="color-option" style="background-color: yellow;"></div>
+                                <div class="color-option" style="background-color: rgb(253, 136, 156);"></div>
+                                <div class="color-option" style="background-color: rgb(85, 160, 185);"></div>
+                            </div>
+                            <div>
+                                
+                                <span class = "new-price">S/.13.00</span>
+                                <span class = "codigo">Codigo K7</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class = "filter-item all accesorios">
+                        <a href="aplasta papilla completo.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/APLASTA PAPILLA COMPLETO.jpg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            
+                            <p style="color: black;">APLASTA PAPILLA COMPLETO</p>
+                            <div class="color-options">
+                                <div class="color-text">COLORES DISPONIBLES:</div>
+                                
+                                <div class="color-option" style="background-color: rgb(253, 136, 156);"></div>
+                                <div class="color-option" style="background-color: rgb(238, 158, 238);"></div>
+                            </div>
+                            <div>
+                                
+                                <span class = "new-price">S/.18.00</span>
+                                <span class = "codigo">Codigo K10</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class = "filter-item all variados">
+                        
+                        <a href="corral plegable.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/CORRAL.jpg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: black;">CORRAL PLEAGABLE</p>
+                            <div class="color-options">
+                                <div class="color-text">COLORES DISPONIBLES:</div>
+                                
+                                <div class="color-option" style="background-color: rgb(253, 136, 156);"></div>
+                                <div class="color-option" style="background-color: rgb(158, 226, 238);"></div>
+                                <div class="color-option" style="background-color: silver ;"></div>
+                            </div>
+                            <div>
+                                
+                                <span class = "new-price">S/.440.00</span>
+                                <span class = "codigo">Codigo K3.2</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                        
+                    </div>
+                    <div class = "filter-item all variados">
+                        <a href="bañera.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/BAÑERA PLEGABLE.png" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: black;">BAÑERA PLEGABLE</p>
+                            <div class="color-options">
+                                <div class="color-text">COLORES DISPONIBLES:</div>
+                                
+                                <div class="color-option" style="background-color: rgb(253, 136, 156);"></div>
+                                <div class="color-option" style="background-color: rgb(158, 226, 238);"></div>
+                                <div class="color-option" style="background-color: silver ;"></div>
+                            </div>
+                            <div>
+                                
+                                <span class = "new-price">S/.125.00</span>
+                                <span class = "codigo">Codigo K7</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class = "filter-item all ropa">
+                        <a href="gorra sapito.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/GORRA SAPITO.jpg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: black;">GORRA SAPITO</p>
+                            <div class="color-options">
+                                <div class="color-text">COLORES DISPONIBLES:</div>
+                                
+                                <div class="color-option" style="background-color: rgb(253, 136, 156);"></div>
+                                <div class="color-option" style="background-color: rgb(158, 226, 238);"></div>
+                                <div class="color-option" style="background-color: yellow ;"></div>
+                                <div class="color-option" style="background-color: rgb(187, 175, 128) ;"></div>
+                            </div>
+                            <div>
+                                
+                                <span class = "new-price">S/.18.00</span>
+                                <span class = "codigo">Codigo K11</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class = "filter-item all ropa">
+                        <a href="gorra dino.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/GORRA DINO.png" alt = "Item image">
+
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: black;">GORRA DINO</p>
+                            <div class="color-options">
+                                <div class="color-text">COLORES DISPONIBLES:</div>
+                                
+                                <div class="color-option" style="background-color: rgb(253, 136, 156);"></div>
+                                <div class="color-option" style="background-color: rgb(11, 105, 168);"></div>
+                                <div class="color-option" style="background-color: yellow ;"></div>
+                                <div class="color-option" style="background-color: orange ;"></div>
+                            </div>
+                            <div>
+                                
+                                <span class = "new-price">S/.18.00</span>
+                                <span class = "codigo">Codigo K1.1</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                    </div>
+                    <div class = "filter-item all variados">
+                        <a href="ARNES ANDADOR.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/ARNES CAMINADOR.png" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: black;">ARNES ANDADOR ANIMALITO</p>
+                            <div class="color-options">
+                                <div class="color-text">COLORES DISPONIBLES:</div>
+                                
+                                <div class="color-option" style="background-color: rgb(253, 136, 156);"></div>
+                                <div class="color-option" style="background-color:black;"></div>
+                                <div class="color-option" style="background-color: white;"></div>
+                                <div class="color-option" style="background-color: brown ;"></div>
+                            </div>
+                            <div>
+                                
+                                <span class = "new-price">S/.60.00</span>
+                                <span class = "codigo">Codigo K4.5</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                    </div>
+                    <div class = "filter-item all ropa">
+                        <a href="ZAPAMEDIA T2.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/ZAPAMEDIA T2.jpg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            
+                            <p style="color: black;">ZAPAMEDIA T2</p>
+                            <div class="color-options">
+                                <div class="color-text">COLORES DISPONIBLES:</div>
+                                
+                                <div class="color-option" style="background-color: rgb(138, 138, 51);"></div>
+                                <div class="color-option" style="background-color: rgba(87, 54, 54, 0.349);"></div>
+                                <div class="color-option" style="background-color: rgb(88, 184, 171) ;"></div>
+                                <div class="color-option" style="background-color: pink;"></div>
+                            </div>
+                            <div>
+                                
+                                <span class = "new-price">S/.19.00</span>
+                                <span class = "codigo">Codigo K1.2</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class = "filter-item all ropa">
+                        <a href="RODILLERA M1.html" style="text-decoration: none;">
+
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/RODILLERA.webp" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            
+                            <p style="color: black;">RODILLERA M1</p>
+                            <div class="color-options">
+                                <div class="color-text">COLORES DISPONIBLES:</div>
+                                
+                                <div class="color-option" style="background-color: rgb(199, 199, 94);"></div>
+                                <div class="color-option" style="background-color: rgb(86, 215, 238) ;"></div>
+                                <div class="color-option" style="background-color: pink;"></div>
+                            </div>
+                            <div>
+                                
+                                <span class = "new-price">S/.12.00</span>
+                                <span class = "codigo">Codigo K0.6</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class = "filter-item all ropa">
+                        <a href="RODILLERA M2.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/RODILLERA SIMPLE.jpg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            
+                            <p style="color: black;">RODILLERA M2</p>
+                            <div class="color-options">
+                                <div class="color-text">COLORES DISPONIBLES:</div>
+                                
+                                <div class="color-option" style="background-color: black;"></div>
+                                <div class="color-option" style="background-color: rgb(171, 218, 207) ;"></div>
+                                <div class="color-option" style="background-color: pink;"></div>
+                                <div class="color-option" style="background-color: silver;"></div>
+                                <div class="color-option" style="background-color: rgb(112, 108, 108);"></div>
+                            </div>
+                            <div>
+                                
+                                <span class = "new-price">S/.7.00</span>
+                                <span class = "codigo">Codigo K3.5</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class = "filter-item all ropa">
+                        <a href="ZAPAMEDIA.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/ZAPAMEDIA.jpg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            
+                            <p style="color: black;">ZAPAMEDIA</p>
+                            <div class="color-options">
+                                <div class="color-text">COLORES DISPONIBLES:</div>
+                                
+                                <div class="color-option" style="background-color: rgb(253, 136, 156);"></div>
+                                <div class="color-option" style="background-color: yellow;"></div>
+                                <div class="color-option" style="background-color: rgb(51, 219, 224) ;"></div>
+                            </div>
+                            <div>
+                                
+                                <span class = "new-price">S/.19.00</span>
+                                <span class = "codigo">Codigo K1.2</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class = "filter-item all ropa">
+                        <a href="calcetin.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/CALCETIN LAZO.jpg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            
+                            <p style="color: black;">CALCETIN LAZO</p>
+                            <div class="color-options">
+                                <div class="color-text">COLORES DISPONIBLES:</div>
+                                
+                                <div class="color-option" style="background-color: red;"></div>
+                                <div class="color-option" style="background-color: silver;"></div>
+                                <div class="color-option" style="background-color: black ;"></div>
+                                <div class="color-option" style="background-color: pink;"></div>
+                            </div>
+                            <div>
+                                
+                                <span class = "new-price">S/.11.00</span>
+                                <span class = "codigo">Codigo K0.6</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class = "filter-item all variados">
+                        <a href="BOLSA KAWAI.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/BOLSO.jpeg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            
+                            <p style="color: black;">BOLSO KAWAI</p>
+                            <div class="color-options">
+                                <div class="color-text">COLORES DISPONIBLES:</div>
+                                
+                                <div class="color-option" style="background-color: yellow;"></div>
+                                <div class="color-option" style="background-color: black;"></div>
+                                <div class="color-option" style="background-color: rgb(32, 155, 138) ;"></div>
+                                <div class="color-option" style="background-color: pink;"></div>
+                            </div>
+                            <div>
+                                
+                                <span class = "new-price">S/.45.00</span>
+                                <span class = "codigo">Codigo K3.0</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                    </div>
+                    
+
+                    <div class = "filter-item all variados">
+                        <a href="ALMOHADA CORBATITA.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/COJIN CORBATITA.jpg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            
+                            <p style="color: black;">ALMOHADA CORBATITA</p>
+                            <div class="color-options">
+                                <div class="color-text">COLORES DISPONIBLES:</div>
+                                
+                                <div class="color-option" style="background-color: yellow;"></div>
+                               
+                                <div class="color-option" style="background-color: white;"></div>
+                                <div class="color-option" style="background-color: orange"></div>
+                            </div>
+                            <div>
+                                
+                                <span class = "new-price">S/.37.00</span>
+                                <span class = "codigo">Codigo K2.7</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class = "filter-item all accesorios">
+                        <a href="DISPENSADOR.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/DISPENSADOR DE FORMULA.jpg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            
+                            <p style="color: black;">DISPENSADOR DE FORMULA</p>
+                            <div class="color-options">
+                                <div class="color-text">COLORES DISPONIBLES:</div>
+                                
+                                <div class="color-option" style="background-color: rgb(70, 194, 231);"></div>
+                                <div class="color-option" style="background-color: orange"></div>
+                            </div>
+                            <div>
+                                
+                                <span class = "new-price">S/.18.00</span>
+                                <span class = "codigo">Codigo K1.2</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                    </div>
+                    
+                    <div class = "filter-item all accesorios">
+                        <a href="ESQUINERA.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/ESQUINERA.webp" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            
+                            <p style="color: black;">ESQUINERA 2METROS</p>
+                            <div class="color-options">
+                                <div class="color-text">COLORES DISPONIBLES:</div>
+                                
+                                <div class="color-option" style="background-color: pink"></div>
+                                <div class="color-option" style="background-color: rgb(46, 202, 194)"></div>
+                            </div>
+                            <div>
+                                
+                                <span class = "new-price">S/.12.00</span>
+                                <span class = "codigo">Codigo K7</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                    </div>
+                    <div class = "filter-item all accesorios">
+                        <a href="PROTECTOR DE ENCHUFE.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/PROTECTOR DE ENCHUFE.jpg" alt = "Item image">
+                        </div>
+                        <div class = "item-info">
+                            
+                            <p style="color: black;">PROTECTOR DE ENCHUFE</p>
+                            <div>
+                                
+                                <span class = "new-price">S/.1.50</span>
+                                <span class = "codigo">Codigo K0.1</span>
+                            </div>
+                           <!-- <a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class = "filter-item all juguetes">
+                        <a href="rodillo.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/RODILLO DE ESTIMULACION.jpg" alt = "Item image">
+                            
+                            
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: black;">RODILLO DE ESTIMULACION</p>
+                            <div>
+                                
+                                <span class = "new-price">S/.58.00</span>
+                                <span class = "codigo">Codigo LH3.8</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class = "filter-item all juguetes">
+                        <a href="ERIZO.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/ERIZO.png" alt = "Item image">
+                            <div class="color-options">
+                                
+                            </div>
+                            
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: black;">ERIZO JUEGO DIDACTICO</p>
+                            <div>
+                                
+                                <span class = "new-price">S/.21.00</span>
+                                <span class = "codigo">Codigo LH.6</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class = "filter-item all juguetes">
+                        <a href="cubo didactico con encaje.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/CUBO DIDACTICO.jpg" alt = "Item image">
+                            <div class="color-options">
+                            </div>
+                            
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: black;">CUBO DIDACTICO FRUTAS MONTESSORI</p>
+                            <div>
+                                
+                                <span class = "new-price">S/.32.00</span>
+                                <span class = "codigo">Codigo LH2.2</span>
+                            </div>
+                           <!-- <a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class = "filter-item all juguetes">
+                        <a href="CUBO DIDACTICO GRANDE.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/CUBO DIDACTICO DE ANIMALES.png" alt = "Item image">
+                            <div class="color-options">
+                                
+                            </div>
+                            
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: black;">CUBO DIDACTICO DE ANIMALES MONTESSORI</p>
+                            <div>
+                                
+                                <span class = "new-price">S/.38.00</span>
+                                <span class = "codigo">Codigo LH2.6</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class = "filter-item all juguetes">
+                        <a href="MUÑECO DE APEGO.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/CANGREJO RECARGABLE.jpg" alt = "Item image">
+                            <div class="color-options">
+                                
+                            </div>
+                            
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: black;">CANGREJO BAILARIN RECARGABLE USB</p>
+                            <div>
+                                
+                                <span class = "new-price">S/.42.00</span>
+                                <span class = "codigo">Codigo LH3.0</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class = "filter-item all juguetes">
+                        <a href="cangrejo a cuerda.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/CANGREJO A CUERDA.jpg" alt = "Item image">
+                            <div class="color-options">
+                                
+                            </div>
+                            
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: black;">CANGREJO BAILARIN A CUERDA</p>
+                            <div>
+                                
+                                <span class = "new-price">S/.28.00</span>
+                                <span class = "codigo">Codigo LH1.6</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                    </div>
+                    <div class = "filter-item all juguetes">
+                        <a href="JUGUETE DE ENCAJE.HTML" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/ENCAJE.jpg" alt = "Item image">
+                            <div class="color-options">
+                                
+                            </div>
+                            
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: black;">JUGUETE DIDACTICO DE ENCAJE</p>
+                            <div>
+                                
+                                <span class = "new-price">S/.38.00</span>
+                                <span class = "codigo">Codigo LH2</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                    </div>
+                    <div class = "filter-item all juguetes">
+                        <a href="JUGUETE MOVIL.html" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/JUGUETE MOVIL.png" alt = "Item image">
+                            <div class="color-options">
+                                
+                            </div>
+                            
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: black;">JUGUETE MOVIL A CONTROL</p>
+                            <div>
+                                
+                                <span class = "new-price">S/.80.00</span>
+                                <span class = "codigo">Codigo LH6.0</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Añadir al carrito</a>-->
+                        </div>
+                    </a>
+                    </div>
+                    <div class = "filter-item all2">
+                        <a href="#" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/sandwichera.jpg" alt = "Item image">
+                            
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: rgb(0, 0, 0);">SANDWICHERA ELECTRICA</p>
+                            <div>
+                                
+                                <span class = "new-price">S/.85.00</span>
+                                <span class = "codigo">Codigo STK4.3</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Add to Cart</a>-->
+                        </div>
+                        </a>
+                        </div>
+                        <div class = "filter-item all2">
+                        <a href="#" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/SOPORTE.png" alt = "Item image">
+                            
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: rgb(0, 0, 0);">CAJA MULTIFUNCIONAL DE CARRO</p>
+                            <div>
+                                
+                                <span class = "new-price">S/.30.00</span>
+                                <span class = "codigo">Codigo STK1.2</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Add to Cart</a>-->
+                        </div>
+                        </a>
+                        </div>
+                        <div class = "filter-item all2">
+                        <a href="" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/REPELENTE.webp" alt = "Item image">
+                            
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: rgb(0, 0, 0);">REPELENTE ULTRASONICO</p>
+                            <div>
+                                
+                                <span class = "new-price">S/.25.00</span>
+                                <span class = "codigo">Codigo STK1.0</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Add to Cart</a>-->
+                        </div>
+                        </a>
+                        </div>
+                        <div class = "filter-item all2">
+                        <a href="" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/ALICATE MULTIFUNCIONAL.jpeg" alt = "Item image">
+                            
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: rgb(0, 0, 0);">ALICATE MULTIFUNCIONAL 5 EN 1</p>
+                            <div>
+                                
+                                <span class = "new-price">S/.90.00</span>
+                                <span class = "codigo">Codigo STK5.0</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Add to Cart</a>-->
+                        </div>
+                        </a>
+                        </div>
+                        <div class = "filter-item all2">
+                        <a href="" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/DESTORNILLAR MAGNETICO.jpg" alt = "Item image">
+                            
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: rgb(0, 0, 0);">KIT DESTORNILLADOR MAGNETICO 24 EN 1</p>
+                            <div>
+                                
+                                <span class = "new-price">S/.14.00</span>
+                                <span class = "codigo">Codigo STK4.0</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Add to Cart</a>-->
+                        </div>
+                        </a>
+                        </div>
+                        <div class = "filter-item all2">
+                        <a href="" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/LAMPARA CON TOMAS.jpg" alt = "Item image">
+                            
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: rgb(0, 0, 0);">LAMPARA MULTIFUNCIONAL </p>
+                            <div>
+                                
+                                <span class = "new-price">S/.30.00</span>
+                                <span class = "codigo">Codigo STK1.3</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Add to Cart</a>-->
+                        </div>
+                        </a>
+                        </div>
+                        <div class = "filter-item all2">
+                        <a href="" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/ESCURRIDOR.jpg" alt = "Item image">
+                            
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: rgb(0, 0, 0);">ESCURRIDOR MODERNO</p>
+                            <div>
+                                
+                                <span class = "new-price">S/.160.00</span>
+                                <span class = "codigo">Codigo STK7.6</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Add to Cart</a>-->
+                        </div>
+                        </a>
+                        </div>
+                        <div class = "filter-item all2">
+                        <a href="" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/FOCO VENTILADOR.jpeg" alt = "Item image">
+                            
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: rgb(0, 0, 0);">FOCO VENTILADOR DE TECHO GIRATORIO</p>
+                            <div>
+                                
+                                <span class = "new-price">S/.60.00</span>
+                                <span class = "codigo">Codigo STK2.8</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Add to Cart</a>-->
+                        </div>
+                        </a>
+                        </div>
+                        <div class = "filter-item all2">
+                        <a href="" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/HORNO.jpg" alt = "Item image">
+                            
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: rgb(0, 0, 0);">HORNO CAFETERA MULTIFUNCIONAL</p>
+                            <div>
+                                
+                                <span class = "new-price">S/.130.00</span>
+                                <span class = "codigo">Codigo STK6.5</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Add to Cart</a>-->
+                        </div>
+                        </a>
+                        </div>
+                        <div class = "filter-item all2">
+                        <a href="" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/sofa inflable.webp" alt = "Item image">
+                            
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: rgb(0, 0, 0);">SOFA INFLABLE</p>
+                            <div>
+                                
+                                <span class = "new-price">S/.80.00</span>
+                                <span class = "codigo">Codigo STK4.2</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Add to Cart</a>-->
+                        </div>
+                        </a>
+                        </div>
+                        <div class = "filter-item all2">
+                        <a href="" style="text-decoration: none;">
+                        <div class = "item-img">
+                            <img src = "images/PORTADA/LIMPIEZA.jpg" alt = "Item image">
+                            
+                        </div>
+                        <div class = "item-info">
+                            <p style="color: rgb(0, 0, 0);">KIT DE LIMPIEZA DE HOGAR</p>
+                            <div>
+                                
+                                <span class = "new-price">S/.25.00</span>
+                                <span class = "codigo">Codigo STK10</span>
+                            </div>
+                            <!--<a href = "#" class ="add-btn">Add to Cart</a>-->
+                        </div>
+                        </a>
+                        </div>
+                        <div class = "filter-item all3 forrado">
+                            <a href="#" style="text-decoration: none;">
+                            <div class = "item-img">
+                                <img src = "images/PORTADA/CON HUECO.jpg" alt = "Item image">
+                                
+                            </div>
+                            <div class = "item-info">
+                                <p style="color: rgb(0, 0, 0);">GIMNASIO PARA GATO - SPIKE</p>
+                                <div>
+                                    
+                                    <span class = "new-price">S/.360.00</span>
+                                    
+                                </div>
+                                <!--<a href = "#" class ="add-btn">Add to Cart</a>-->
+                            </div>
+                            </a>
+                        
+                            </div>
+                            <div class = "filter-item all3 forrado">
+                            <a href="#" style="text-decoration: none;">
+                            <div class = "item-img">
+                                <img src = "images/PORTADA/G.GRANDOTE.jpg" alt = "Item image">
+                                
+                            </div>
+                            <div class = "item-info">
+                                <p style="color: rgb(0, 0, 0);">GIMNASIO PARA GATO - STOLE</p>
+                                <div>
+                                    
+                                    <span class = "new-price">S/.540.00</span>
+                                    
+                                </div>
+                                <!--<a href = "#" class ="add-btn">Add to Cart</a>-->
+                            </div>
+                            </a>
+                        
+                            </div>
+                            <div class = "filter-item all3 pino">
+                            <a href="#" style="text-decoration: none;">
+                            <div class = "item-img">
+                                <img src = "images/PORTADA/GIMNASIO DE PINO1.jpg" alt = "Item image">
+                                
+                            </div>
+                            <div class = "item-info">
+                                <p style="color: rgb(0, 0, 0);">GIMNASIO PARA GATO DE PINO- PRINK</p>
+                                <div>
+                                    
+                                    <span class = "new-price">S/.850.00</span>
+                                    
+                                </div>
+                                <!--<a href = "#" class ="add-btn">Add to Cart</a>-->
+                            </div>
+                            </a>
+                        
+                            </div>
+                            <div class = "filter-item all3 accesorio">
+                            <a href="#" style="text-decoration: none;">
+                            <div class = "item-img">
+                                <img src = "images/PORTADA/accesorios para gato.webp" alt = "Item image">
+                                
+                            </div>
+                            <div class = "item-info">
+                                <p style="color: rgb(0, 0, 0);">RASCADOR DE GATO - FUNK</p>
+                                <div>
+                                    
+                                    <span class = "new-price">S/.70.00</span>
+                                    
+                                </div>
+                                <!--<a href = "#" class ="add-btn">Add to Cart</a>-->
+                            </div>
+                            </a>
+                        
+                            </div>
+                    </div>
+            </div>
+                <div class="report">
+                    <div class="titu2"><h2>Comentarios de nuestros clientes
+                        <!--<button class="plus" onclick="openPopup()">+</button>-->
+                        </h2></div>
+                    <!-- HTML para un comentario -->
+                    <div class="comentario" data-rating="4">
+                        <div class="coment1"><p>Gracias me llego en excelente calidad y en cajas individuales los dos.</p>
+                        <span class="cliente">Ivon B.V</span></div>
+                        <span class="fecha1">30/03/2024</span>
+                        <div class="imagenes">
+                            <img src="clientes/cliente1/Captura de pantalla 2024-05-07 113401.png" alt="Imagen 2" class="imagen-pequena" data-imagen="clientes/cliente1/Captura de pantalla 2024-05-07 113401.png">
+                            <img src="clientes/cliente1/Imagen de WhatsApp 2024-03-30 a las 10.32.20_d554978c.jpg" alt="Imagen 2" class="imagen-pequena" data-imagen="clientes/cliente1/Imagen de WhatsApp 2024-03-30 a las 10.32.20_d554978c.jpg">
+                            <img src="clientes/cliente1/Captura de pantalla 2024-05-07 113045.png" alt="Imagen 1" class="imagen-pequena" data-imagen="clientes/cliente1/Captura de pantalla 2024-05-07 113045.png">
+                            <span class="ubic">Huancayo CO</span>
+                            
+                        </div>
+                        <div class="stars"></div>
+                    </div>
+                    <div class="comentario" data-rating="5">
+                        <div class="coment1"><p>Excelente producto y puntual en punto de encuentro.</p>
+                        <span class="cliente">Byron M.C</span></div>
+                        <span class="fecha1">05/04/2024</span>
+                        <div class="imagenes">
+                            <img src="clientes/cliente2/Captura de pantalla 2024-05-07 121619.png" alt="Imagen 2" class="imagen-pequena" data-imagen="clientes/cliente2/Captura de pantalla 2024-05-07 121619.png">
+                            
+                            <span class="ubic">Ate - Santa Clara</span>
+                            
+                        </div>
+                        <div class="stars"></div>
+                    </div>
+                    <div class="comentario hidden" data-rating="5">
+                        <div class="coment1"><p>Buenas calidad y vendedor confiable.</p>
+                        <span class="cliente">Johana C.C</span></div>
+                        <span class="fecha1">06/04/2024</span>
+                        <div class="imagenes">
+                            <img src="clientes/cliente3/Captura de pantalla 2024-05-07 122553.png" alt="Imagen 2" class="imagen-pequena" data-imagen="clientes/cliente3/Captura de pantalla 2024-05-07 122553.png">
+                            <img src="clientes/cliente3/Captura de pantalla 2024-05-07 123104.png" alt="Imagen 2" class="imagen-pequena" data-imagen="clientes/cliente3/Captura de pantalla 2024-05-07 123104.png">
+                            
+                            <span class="ubic">Jesus Maria Av. San Felipe</span>
+                            
+                        </div>
+                        <div class="stars"></div>
+                    </div>
+                    <div class="comentario hidden" data-rating="4">
+                        <div class="coment1"><p>Excelentes condiciones me llego mi set para mi niño.</p>
+                        <span class="cliente">Omar R.</span></div>
+                        <span class="fecha1">16/04/2024</span>
+                        <div class="imagenes">
+                            <img src="clientes/cliente4/Imagen de WhatsApp 2024-03-10 a las 22.36.41_1f4ae9d2.jpg" alt="Imagen 2" class="imagen-pequena" data-imagen="clientes/cliente4/Imagen de WhatsApp 2024-03-10 a las 22.36.41_1f4ae9d2.jpg">
+
+                            <span class="ubic">Piura</span>
+                            
+                        </div>
+                        <div class="stars"></div>
+                    </div>
+                    <button id="VERMAS">
+                        <img src="images/VERMAS.png" alt="Inicio" style="width: 30px; height: 30px;"><br>
+                    </button>
+                    <button id="VERMENOS" style="display: none;">
+                        <img src="images/VERMENOS.png" alt="Inicio" style="width: 30px; height: 30px;"><br>
+                    </button>
+                    <!-- Agrega más comentarios según sea necesario -->
+                    
+                </div>
+            </div>
+            <section id="comentarios" class="comentarios-section">
+                
+                <div id="popup" class="popup">
+                    <div class="popup-content">
+                        <span onclick="closePopup()" class="close">x</span>
+                        <h2>REGISTRA TU COMENTARIO</h2>
+                        <form id="commentForm">
+                            <label for="currentDate">Fecha:</label>
+                            <span id="currentDate"></span>
+                            <br><br>
+                            <label for="name">Nombre y Apellido:</label>
+                            <input type="text" id="name" name="name" required>
+                            <br><br>
+                            <label for="district">Distrito:</label>
+                            <input type="text" id="district" name="district" required>
+                            <br><br>
+                            <label for="comment">Comentario:</label>
+                            <textarea id="comment" name="comment" required></textarea>
+                            <br><br>
+                            <label for="rating">Valoración:</label>
+                            <div class="rating">
+                                <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+                                <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+                                <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+                                <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+                                <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+                            </div>
+                            <br><br>
+                            <label for="photo">Selecciona una foto:</label>
+                            <input type="file" id="photo" name="photo" accept="image/*">
+                            <br><br>
+                            <div id="selectedPhotos"></div>
+                            <br><br>
+                            <input type="submit" value="Guardar">
+                        </form>
+                    </div>
+                </div>
+                <div id="confirmation" class="confirmation">
+                    <div class="confirmation-content">
+                        <span onclick="closeConfirmation()" class="close">x</span>
+                        <p>Tu comentario pronto se visualizará. ¡Gracias!</p>
+                    </div>
+                </div>
+            
+
+                
+                <script>
+                    function submitForm() {
+                        document.getElementById('loading').style.display = 'block';
+                        setTimeout(function() {
+                            document.getElementById('popup').style.display = 'none';
+                        }, 2000); // Cambia 2000 por el tiempo de retraso en milisegundos que desees
+                        return true;
+                    }
+                
+                    function closePopup() {
+                        document.getElementById('popup').style.display = 'none';
+                    }
+                </script>
+                
+               
+            </section>
+        </div>
+        </div>
+        <div class="fixed-panel">
+            <button id="homeBtn">
+                <img src="images/INICIO.png" alt="Inicio" style="width: 30px; height: 30px;"><br>
+                Inicio
+            </button>
+            <button id="commentsBtn">
+                <img src="images/COMENTARIOS.png" alt="Inicio" style="width: 30px; height: 30px;"><br>Comentarios
+            </button>
+        </div>  
+    </div>
+    <script src = "script2.js"></script>
+    <a href="https://walink.co/a28060" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
+        <div class="whatsapp-icon-container">
+            <img src="images/ws.png" alt="WhatsApp" class="whatsapp-icon">
+        </div>
+    </a>
+    
+</body>
+</html>

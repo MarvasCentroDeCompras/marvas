@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Roboto', sans-serif;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+.main-wrapper{
+    min-height: 20vh;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-wrapper1{
+    min-height: 3vh;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    max-width: 1200px;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+.product-div{
+    margin: 1rem 0;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #fff;
+    border-radius: 3px;
+    column-gap: 10px;
+}
+.product-div-left{
+    padding: 20px;
+}
+.product-div-right{
+    padding: 20px;
+}
+.img-container img{
+    transition: transform 0.2s ease;
+    width: 200px;
+    margin: 0 auto;
+    width: 80%; /* Enlarge the width by 20% */
+    height: 80%; /* Enlarge the height by 20% */
+}
+.img-container img:hover {
+    transform: scale(1.2); /* Aumentar el tamaño de la imagen al 120% */
+}
+.hover-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+}
+.hover-container1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.hover-container div{
+    border: 2px solid rgba(148, 127, 129, 0.4);
+    padding: 1rem;
+    border-radius: 3px;
+    margin: 0 4px 8px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hover-container1 div{
+    
+    padding: 0rem;
+    border-radius: 3px;
+    margin: 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.active{
+    border-color: rgb(255, 145, 163)!important;
+}
+.hover-container div:hover{
+    border-color: rgb(255, 145, 163);
+}
+.hover-container div img{
+    width: 50px;
+    cursor: pointer;
+}
+.hover-container1 div:hover{
+    border-color: rgb(255, 145, 163);
+}
+.hover-container1 div img{
+    width: 292px;
+    
+}
+.product-div-right span{
+    display: block;
+}
+.product-name{
+    font-size: 26px;
+    margin-bottom: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+.product-price{
+    font-weight: 700;
+    font-size: 24px;
+    opacity: 0.9;
+    font-weight: 500;
+}
+.product-rating{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+.product-rating span{
+    margin-right: 6px;
+}
+.product-description{
+    font-weight: 18px;
+    line-height: 1.6;
+    font-weight: 300;
+    opacity: 0.9;
+    margin-top: 22px;
+    text-align: justify;
+}
+
+/* Estilos para el contenedor de los botones */
+.btn-groups {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para los botones */
+.add-cart-btn, .buy-now-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos específicos para el botón de Facebook */
+.add-cart-btn {
+    background-color: #3b5998; /* Color de Facebook */
+    color: #fff; /* Texto en blanco */
+}
+
+.add-cart-btn:hover {
+    background-color: #2d4373; /* Color de Facebook al pasar el ratón */
+}
+
+/* Estilos específicos para el botón de WhatsApp */
+.buy-now-btn {
+    background-color: #25d366; /* Color de WhatsApp */
+    color: #fff; /* Texto en blanco */
+}
+
+.buy-now-btn:hover {
+    background-color: #128c7e; /* Color de WhatsApp al pasar el ratón */
+}
+
+/* Estilos para los iconos */
+.fab {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 992px){
+    .product-div{
+        grid-template-columns: 100%;
+    }
+    .product-div-right{
+        text-align: center;
+    }
+    .product-rating{
+        justify-content: center;
+    }
+    .product-description{
+        max-width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+
+
